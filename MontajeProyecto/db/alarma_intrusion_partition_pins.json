@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "alarma",
+					"strict" : false
+				},
+				{
+					"name" : "sirena",
+					"strict" : false
+				},
+				{
+					"name" : "ua",
+					"strict" : false
+				},
+				{
+					"name" : "columna[7]",
+					"strict" : false
+				},
+				{
+					"name" : "columna[6]",
+					"strict" : false
+				},
+				{
+					"name" : "columna[5]",
+					"strict" : false
+				},
+				{
+					"name" : "columna[4]",
+					"strict" : false
+				},
+				{
+					"name" : "columna[3]",
+					"strict" : false
+				},
+				{
+					"name" : "columna[2]",
+					"strict" : false
+				},
+				{
+					"name" : "columna[1]",
+					"strict" : false
+				},
+				{
+					"name" : "columna[0]",
+					"strict" : false
+				},
+				{
+					"name" : "columnas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "columnas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "columnas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "columnas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estados[4]",
+					"strict" : false
+				},
+				{
+					"name" : "estados[3]",
+					"strict" : false
+				},
+				{
+					"name" : "estados[2]",
+					"strict" : false
+				},
+				{
+					"name" : "estados[1]",
+					"strict" : false
+				},
+				{
+					"name" : "estados[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fila[6]",
+					"strict" : false
+				},
+				{
+					"name" : "fila[5]",
+					"strict" : false
+				},
+				{
+					"name" : "fila[4]",
+					"strict" : false
+				},
+				{
+					"name" : "fila[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fila[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fila[1]",
+					"strict" : false
+				},
+				{
+					"name" : "filas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "filas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "filas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "filas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "sp_n",
+					"strict" : false
+				},
+				{
+					"name" : "rstn_n",
+					"strict" : false
+				},
+				{
+					"name" : "s2_n",
+					"strict" : false
+				},
+				{
+					"name" : "s3_n",
+					"strict" : false
+				},
+				{
+					"name" : "s1_n",
+					"strict" : false
+				},
+				{
+					"name" : "start_n",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

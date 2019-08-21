@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Aug 15 11:25:12 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : alarma_intrusion
+Top-level Entity Name : particion
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,331 / 22,320 ( 6 % )
+    Total combinational functions : 847 / 22,320 ( 4 % )
+    Dedicated logic registers : 977 / 22,320 ( 4 % )
+Total registers : 977
+Total pins : 40 / 154 ( 26 % )
+Total virtual pins : 0
+Total memory bits : 4,992 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

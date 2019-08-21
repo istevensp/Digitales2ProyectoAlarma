@@ -1,0 +1,9 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mss is 
+port(clock, resetn, tecla, clave: in std_logic;
+	  ldn, en1, en2, en3, en4: out std_logic);
+	  
+end mss;

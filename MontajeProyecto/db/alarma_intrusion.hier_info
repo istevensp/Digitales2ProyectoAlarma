@@ -1,0 +1,1675 @@
+|particion
+alarma <= mss:inst47.alarma
+clock => CLOCK_DIV_50:inst58.CLOCK_50MHz
+rstn_n => ANTIREBOTE:inst65.PB_N
+filas[0] => inst63.IN0
+filas[0] => teclado:inst57.filas[0]
+filas[1] => inst62.IN0
+filas[1] => teclado:inst57.filas[1]
+filas[2] => inst61.IN0
+filas[2] => teclado:inst57.filas[2]
+filas[3] => inst60.IN0
+filas[3] => teclado:inst57.filas[3]
+start_n => ANTIREBOTE:inst64.PB_N
+sp_n => ANTIREBOTE:inst69.PB_N
+s2_n => ANTIREBOTE:inst67.PB_N
+s3_n => ANTIREBOTE:inst68.PB_N
+s1_n => ANTIREBOTE:inst66.PB_N
+sirena <= mss:inst47.sirena
+ua <= mss:inst47.ua
+columna[0] <= mux8a1:inst72.Q[0]
+columna[1] <= mux8a1:inst72.Q[1]
+columna[2] <= mux8a1:inst72.Q[2]
+columna[3] <= mux8a1:inst72.Q[3]
+columna[4] <= mux8a1:inst72.Q[4]
+columna[5] <= mux8a1:inst72.Q[5]
+columna[6] <= mux8a1:inst72.Q[6]
+columna[7] <= mux8a1:inst72.Q[7]
+columnas[0] <= teclado:inst57.columnas[0]
+columnas[1] <= teclado:inst57.columnas[1]
+columnas[2] <= teclado:inst57.columnas[2]
+columnas[3] <= teclado:inst57.columnas[3]
+estados[0] <= mss:inst47.estados[0]
+estados[1] <= mss:inst47.estados[1]
+estados[2] <= mss:inst47.estados[2]
+estados[3] <= mss:inst47.estados[3]
+estados[4] <= mss:inst47.estados[4]
+estados[5] <= mss:inst47.estados[5]
+fila[0] <= ram:inst74.Q[0]
+fila[1] <= ram:inst74.Q[1]
+fila[2] <= ram:inst74.Q[2]
+fila[3] <= ram:inst74.Q[3]
+fila[4] <= ram:inst74.Q[4]
+fila[5] <= ram:inst74.Q[5]
+fila[6] <= ram:inst74.Q[6]
+fila[7] <= ram:inst74.Q[7]
+
+
+|particion|mss:inst47
+clock => y~28.DATAIN
+resetn => y~30.DATAIN
+tecla => Selector3.IN16
+tecla => Selector5.IN16
+tecla => Selector7.IN16
+tecla => Selector9.IN16
+tecla => en1.DATAB
+tecla => en2.DATAB
+tecla => en3.DATAB
+tecla => en4.DATAB
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => y.OUTPUTSELECT
+tecla => Selector18.IN14
+tecla => Selector16.IN14
+tecla => Selector20.IN14
+tecla => Selector22.IN14
+tecla => Selector2.IN7
+tecla => Selector4.IN6
+tecla => Selector4.IN7
+tecla => Selector6.IN6
+tecla => Selector6.IN7
+tecla => Selector8.IN6
+tecla => Selector8.IN7
+tecla => Selector10.IN6
+clave => Selector11.IN15
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => y.OUTPUTSELECT
+clave => Selector2.IN8
+start => Selector1.IN16
+start => Selector0.IN6
+start => Selector2.IN6
+ok10s => y.DATAB
+ok10s => y.DATAB
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => Selector12.IN15
+sp => y.DATAA
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => y.OUTPUTSELECT
+sp => Selector13.IN5
+sp => y.DATAA
+sensores => y.OUTPUTSELECT
+sensores => y.OUTPUTSELECT
+sensores => Selector25.IN14
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.DATAA
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.OUTPUTSELECT
+ok10se => y.DATAA
+ok2s => Selector2.IN18
+ok2s => Selector24.IN12
+ok20s => Selector25.IN15
+ok20s => ldj.OUTPUTSELECT
+ok20s => enk.OUTPUTSELECT
+ok20s => ldi.OUTPUTSELECT
+ok20s => ldk.OUTPUTSELECT
+ok20s => eni.OUTPUTSELECT
+ok20s => Selector14.IN15
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+clavea => y.OUTPUTSELECT
+oki => ldi.DATAB
+oki => eni.DATAB
+okj => enk.OUTPUTSELECT
+okj => ldi.OUTPUTSELECT
+okj => ldk.OUTPUTSELECT
+okj => eni.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => enk.OUTPUTSELECT
+okj => ldi.OUTPUTSELECT
+okj => ldk.OUTPUTSELECT
+okj => eni.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => y.OUTPUTSELECT
+okj => ldj.DATAB
+okj => Selector28.IN2
+okj => Selector28.IN3
+okk => ldi.OUTPUTSELECT
+okk => eni.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => ldi.OUTPUTSELECT
+okk => eni.OUTPUTSELECT
+okk => enk.DATAB
+okk => y.OUTPUTSELECT
+okk => y.OUTPUTSELECT
+okk => ldk.DATAB
+ldn <= ldn.DB_MAX_OUTPUT_PORT_TYPE
+en1 <= en1.DB_MAX_OUTPUT_PORT_TYPE
+en2 <= en2.DB_MAX_OUTPUT_PORT_TYPE
+en3 <= en3.DB_MAX_OUTPUT_PORT_TYPE
+en4 <= en4.DB_MAX_OUTPUT_PORT_TYPE
+en10s <= en10s.DB_MAX_OUTPUT_PORT_TYPE
+ld10s <= ld10s.DB_MAX_OUTPUT_PORT_TYPE
+alarma <= WideOr24.DB_MAX_OUTPUT_PORT_TYPE
+sirena <= WideOr27.DB_MAX_OUTPUT_PORT_TYPE
+en10se <= WideOr28.DB_MAX_OUTPUT_PORT_TYPE
+ld10se <= WideOr16.DB_MAX_OUTPUT_PORT_TYPE
+en2s <= en2s.DB_MAX_OUTPUT_PORT_TYPE
+ld2s <= ld2s.DB_MAX_OUTPUT_PORT_TYPE
+en20s <= en20s.DB_MAX_OUTPUT_PORT_TYPE
+ld20s <= ld20s.DB_MAX_OUTPUT_PORT_TYPE
+ua <= ua.DB_MAX_OUTPUT_PORT_TYPE
+ldi <= Selector27.DB_MAX_OUTPUT_PORT_TYPE
+ldj <= Selector28.DB_MAX_OUTPUT_PORT_TYPE
+ldk <= Selector29.DB_MAX_OUTPUT_PORT_TYPE
+eni <= Selector31.DB_MAX_OUTPUT_PORT_TYPE
+enj <= WideOr25.DB_MAX_OUTPUT_PORT_TYPE
+enk <= Selector30.DB_MAX_OUTPUT_PORT_TYPE
+enintruso <= enintruso.DB_MAX_OUTPUT_PORT_TYPE
+enatraco <= enatraco.DB_MAX_OUTPUT_PORT_TYPE
+estados[0] <= WideOr22.DB_MAX_OUTPUT_PORT_TYPE
+estados[1] <= WideOr21.DB_MAX_OUTPUT_PORT_TYPE
+estados[2] <= WideOr20.DB_MAX_OUTPUT_PORT_TYPE
+estados[3] <= WideOr19.DB_MAX_OUTPUT_PORT_TYPE
+estados[4] <= WideOr18.DB_MAX_OUTPUT_PORT_TYPE
+estados[5] <= <GND>
+
+
+|particion|CLOCK_DIV_50:inst58
+CLOCK_50MHz => CLOCK_1Hz~reg0.CLK
+CLOCK_50MHz => CLOCK_10Hz~reg0.CLK
+CLOCK_50MHz => CLOCK_100Hz~reg0.CLK
+CLOCK_50MHz => CLOCK_1KHz~reg0.CLK
+CLOCK_50MHz => CLOCK_10KHz~reg0.CLK
+CLOCK_50MHz => CLOCK_100KHz~reg0.CLK
+CLOCK_50MHz => CLOCK_1MHz~reg0.CLK
+CLOCK_50MHz => clock_1Mhz_int.CLK
+CLOCK_50MHz => count_1Mhz[0].CLK
+CLOCK_50MHz => count_1Mhz[1].CLK
+CLOCK_50MHz => count_1Mhz[2].CLK
+CLOCK_50MHz => count_1Mhz[3].CLK
+CLOCK_50MHz => count_1Mhz[4].CLK
+CLOCK_50MHz => count_1Mhz[5].CLK
+CLOCK_1MHz <= CLOCK_1MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_100KHz <= CLOCK_100KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_10KHz <= CLOCK_10KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_1KHz <= CLOCK_1KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_100Hz <= CLOCK_100Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_10Hz <= CLOCK_10Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_1Hz <= CLOCK_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|ANTIREBOTE:inst65
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|comp4:inst10
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|reg_sost4:inst200
+ent[0] => temp.DATAB
+ent[1] => temp.DATAB
+ent[2] => temp.DATAB
+ent[3] => temp.DATAB
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|teclado:inst57
+clock => ypre~1.DATAIN
+filas[0] => Equal0.IN3
+filas[0] => Equal1.IN3
+filas[0] => Equal2.IN3
+filas[0] => Equal3.IN0
+filas[1] => Equal0.IN2
+filas[1] => Equal1.IN2
+filas[1] => Equal2.IN0
+filas[1] => Equal3.IN3
+filas[2] => Equal0.IN1
+filas[2] => Equal1.IN0
+filas[2] => Equal2.IN2
+filas[2] => Equal3.IN2
+filas[3] => Equal0.IN0
+filas[3] => Equal1.IN1
+filas[3] => Equal2.IN1
+filas[3] => Equal3.IN1
+columnas[0] <= columnas[0].DB_MAX_OUTPUT_PORT_TYPE
+columnas[1] <= columnas[1].DB_MAX_OUTPUT_PORT_TYPE
+columnas[2] <= columnas[2].DB_MAX_OUTPUT_PORT_TYPE
+columnas[3] <= columnas[3].DB_MAX_OUTPUT_PORT_TYPE
+numero[0] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+numero[1] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+numero[2] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+numero[3] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|tres4:inst19
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|tres4:inst19|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+
+
+|particion|comp4:inst12
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|reg_sost4:inst1
+ent[0] => temp.DATAB
+ent[1] => temp.DATAB
+ent[2] => temp.DATAB
+ent[3] => temp.DATAB
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|siete4:inst20
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|siete4:inst20|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+
+
+|particion|comp4:inst13
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|reg_sost4:inst2
+ent[0] => temp.DATAB
+ent[1] => temp.DATAB
+ent[2] => temp.DATAB
+ent[3] => temp.DATAB
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|dos4:inst21
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|dos4:inst21|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+
+
+|particion|comp4:inst16
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|reg_sost4:inst3
+ent[0] => temp.DATAB
+ent[1] => temp.DATAB
+ent[2] => temp.DATAB
+ent[3] => temp.DATAB
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|seis4:inst22
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|seis4:inst22|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+
+
+|particion|comp4:inst23
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cinco4:inst28
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|cinco4:inst28|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+
+
+|particion|comp4:inst24
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|uno4:inst30
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|uno4:inst30|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+
+
+|particion|comp4:inst25
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cuatro4:inst31
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|cuatro4:inst31|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+
+
+|particion|comp4:inst26
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|nueve4:inst37
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|nueve4:inst37|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+
+
+|particion|comp4:inst5
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cuatro4:inst11
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|cuatro4:inst11|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+
+
+|particion|comp4:inst6
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|nueve4:inst17
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|nueve4:inst17|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+
+
+|particion|comp4:inst7
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|ocho4:inst14
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|ocho4:inst14|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+
+
+|particion|comp4:inst8
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|tres4:inst15
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|tres4:inst15|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+
+
+|particion|ANTIREBOTE:inst64
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|comp4:inst45
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cnt_up4:inst44
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|diez4:inst46
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|diez4:inst46|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+
+
+|particion|ANTIREBOTE:inst69
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|ANTIREBOTE:inst67
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|ANTIREBOTE:inst68
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|ANTIREBOTE:inst66
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|comp4:inst49
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cnt_up4:inst48
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|diez4:inst51
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|diez4:inst51|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+
+
+|particion|comp4:inst53
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cnt_up4:inst52
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|dos4:inst100
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|dos4:inst100|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+
+
+|particion|comp5:inst55
+A[0] => Equal0.IN4
+A[1] => Equal0.IN3
+A[2] => Equal0.IN2
+A[3] => Equal0.IN1
+A[4] => Equal0.IN0
+B[0] => Equal0.IN9
+B[1] => Equal0.IN8
+B[2] => Equal0.IN7
+B[3] => Equal0.IN6
+B[4] => Equal0.IN5
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cnt_up5:inst54
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+resetn => temp[4].ACLR
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+clock => temp[4].CLK
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+sal[4] <= temp[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|veinte5:inst56
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+
+
+|particion|veinte5:inst56|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <VCC>
+
+
+|particion|comp4:inst32
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|uno4:inst38
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|uno4:inst38|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+
+
+|particion|comp4:inst33
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|dos4:inst39
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|dos4:inst39|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+
+
+|particion|comp4:inst34
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|tres4:inst40
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|tres4:inst40|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+
+
+|particion|comp4:inst35
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cuatro4:inst41
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|cuatro4:inst41|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+
+
+|particion|comp6:inst70
+A[0] => Equal0.IN5
+A[1] => Equal0.IN4
+A[2] => Equal0.IN3
+A[3] => Equal0.IN2
+A[4] => Equal0.IN1
+A[5] => Equal0.IN0
+B[0] => Equal0.IN11
+B[1] => Equal0.IN10
+B[2] => Equal0.IN9
+B[3] => Equal0.IN8
+B[4] => Equal0.IN7
+B[5] => Equal0.IN6
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cnt_up6:inst42
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+resetn => temp[4].ACLR
+resetn => temp[5].ACLR
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+clock => temp[4].CLK
+clock => temp[5].CLK
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+sal[4] <= temp[4].DB_MAX_OUTPUT_PORT_TYPE
+sal[5] <= temp[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|num_i:inst75
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+result[5] <= lpm_constant:LPM_CONSTANT_component.result[5]
+
+
+|particion|num_i:inst75|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <VCC>
+
+
+|particion|comp4:inst4
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cnt_up4:inst29
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|num_j:inst77
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+
+
+|particion|num_j:inst77|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+
+
+|particion|comp8:inst73
+A[0] => Equal0.IN7
+A[1] => Equal0.IN6
+A[2] => Equal0.IN5
+A[3] => Equal0.IN4
+A[4] => Equal0.IN3
+A[5] => Equal0.IN2
+A[6] => Equal0.IN1
+A[7] => Equal0.IN0
+B[0] => Equal0.IN15
+B[1] => Equal0.IN14
+B[2] => Equal0.IN13
+B[3] => Equal0.IN12
+B[4] => Equal0.IN11
+B[5] => Equal0.IN10
+B[6] => Equal0.IN9
+B[7] => Equal0.IN8
+Aigual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|cnt_up8:inst201
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+en => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+ld => temp.OUTPUTSELECT
+resetn => temp[0].ACLR
+resetn => temp[1].ACLR
+resetn => temp[2].ACLR
+resetn => temp[3].ACLR
+resetn => temp[4].ACLR
+resetn => temp[5].ACLR
+resetn => temp[6].ACLR
+resetn => temp[7].ACLR
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+clock => temp[4].CLK
+clock => temp[5].CLK
+clock => temp[6].CLK
+clock => temp[7].CLK
+sal[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+sal[4] <= temp[4].DB_MAX_OUTPUT_PORT_TYPE
+sal[5] <= temp[5].DB_MAX_OUTPUT_PORT_TYPE
+sal[6] <= temp[6].DB_MAX_OUTPUT_PORT_TYPE
+sal[7] <= temp[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|num_k:inst76
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+result[5] <= lpm_constant:LPM_CONSTANT_component.result[5]
+result[6] <= lpm_constant:LPM_CONSTANT_component.result[6]
+result[7] <= lpm_constant:LPM_CONSTANT_component.result[7]
+
+
+|particion|num_k:inst76|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
+result[6] <= <GND>
+result[7] <= <GND>
+
+
+|particion|mux8a1:inst72
+S[0] => Mux0.IN19
+S[0] => Mux1.IN19
+S[0] => Mux2.IN19
+S[0] => Mux3.IN19
+S[0] => Mux4.IN19
+S[0] => Mux5.IN19
+S[0] => Mux6.IN19
+S[0] => Mux7.IN19
+S[1] => Mux0.IN18
+S[1] => Mux1.IN18
+S[1] => Mux2.IN18
+S[1] => Mux3.IN18
+S[1] => Mux4.IN18
+S[1] => Mux5.IN18
+S[1] => Mux6.IN18
+S[1] => Mux7.IN18
+S[2] => Mux0.IN17
+S[2] => Mux1.IN17
+S[2] => Mux2.IN17
+S[2] => Mux3.IN17
+S[2] => Mux4.IN17
+S[2] => Mux5.IN17
+S[2] => Mux6.IN17
+S[2] => Mux7.IN17
+S[3] => Mux0.IN16
+S[3] => Mux1.IN16
+S[3] => Mux2.IN16
+S[3] => Mux3.IN16
+S[3] => Mux4.IN16
+S[3] => Mux5.IN16
+S[3] => Mux6.IN16
+S[3] => Mux7.IN16
+Q[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|particion|ram:inst74
+address[0] => Mux0.IN69
+address[0] => Mux1.IN69
+address[0] => Mux2.IN69
+address[0] => Mux3.IN69
+address[0] => Mux4.IN69
+address[0] => Mux5.IN69
+address[0] => Mux6.IN69
+address[0] => Mux7.IN69
+address[0] => Mux8.IN69
+address[0] => Mux9.IN69
+address[1] => Mux0.IN68
+address[1] => Mux1.IN68
+address[1] => Mux2.IN68
+address[1] => Mux3.IN68
+address[1] => Mux4.IN68
+address[1] => Mux5.IN68
+address[1] => Mux6.IN68
+address[1] => Mux7.IN68
+address[1] => Mux8.IN68
+address[1] => Mux9.IN68
+address[2] => Mux0.IN67
+address[2] => Mux1.IN67
+address[2] => Mux2.IN67
+address[2] => Mux3.IN67
+address[2] => Mux4.IN67
+address[2] => Mux5.IN67
+address[2] => Mux6.IN67
+address[2] => Mux7.IN67
+address[2] => Mux8.IN67
+address[2] => Mux9.IN67
+address[3] => Mux0.IN66
+address[3] => Mux1.IN66
+address[3] => Mux2.IN66
+address[3] => Mux3.IN66
+address[3] => Mux4.IN66
+address[3] => Mux5.IN66
+address[3] => Mux6.IN66
+address[3] => Mux7.IN66
+address[3] => Mux8.IN66
+address[3] => Mux9.IN66
+address[4] => Mux0.IN65
+address[4] => Mux1.IN65
+address[4] => Mux2.IN65
+address[4] => Mux3.IN65
+address[4] => Mux4.IN65
+address[4] => Mux5.IN65
+address[4] => Mux6.IN65
+address[4] => Mux7.IN65
+address[4] => Mux8.IN65
+address[4] => Mux9.IN65
+address[5] => Mux0.IN64
+address[5] => Mux1.IN64
+address[5] => Mux2.IN64
+address[5] => Mux3.IN64
+address[5] => Mux4.IN64
+address[5] => Mux5.IN64
+address[5] => Mux6.IN64
+address[5] => Mux7.IN64
+address[5] => Mux8.IN64
+address[5] => Mux9.IN64
+enintruso => Q[1].OUTPUTSELECT
+enintruso => Q[2].OUTPUTSELECT
+enintruso => Q[3].OUTPUTSELECT
+enintruso => Q[4].OUTPUTSELECT
+enintruso => Q[5].OUTPUTSELECT
+enintruso => Q[6].OUTPUTSELECT
+enintruso => Q[7].IN0
+enatraco => Q[7].IN1
+Q[0] <= <GND>
+Q[1] <= Q[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= <GND>
+
+
+|particion|sumador8:inst71
+a[0] => Add0.IN8
+a[1] => Add0.IN7
+a[2] => Add0.IN6
+a[3] => Add0.IN5
+a[4] => Add0.IN4
+a[5] => Add0.IN3
+b[0] => Add0.IN12
+b[1] => Add0.IN11
+b[2] => Add0.IN10
+b[3] => Add0.IN9
+salida[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+

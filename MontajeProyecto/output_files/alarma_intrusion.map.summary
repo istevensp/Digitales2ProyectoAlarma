@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Aug 15 11:25:01 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : alarma_intrusion
+Top-level Entity Name : particion
+Family : Cyclone IV E
+Total logic elements : 1,359
+    Total combinational functions : 845
+    Dedicated logic registers : 977
+Total registers : 977
+Total pins : 40
+Total virtual pins : 0
+Total memory bits : 4,992
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
